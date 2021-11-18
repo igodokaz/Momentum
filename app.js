@@ -1,64 +1,30 @@
-// const calculator = {
-//   plus: function (a, b) {
-//     console.log(a + b);
-//   },
-//   minus: function (a, b) {
-//     console.log(a - b);
-//   },
-//   times: function (a, b) {
-//     console.log(a * b);
-//   },
-//   divide: function (a, b) {
-//     console.log(a / b);
-//   },
-//   power: function (a, b) {
-//     console.log(a ** b);
-//   },
-// };
+// Conditionals
 
-// calculator.plus(2, 3);
-// calculator.times(2, 3);
-// calculator.minus(2, 3);
-// calculator.divide(2, 3);
-// calculator.power(2, 3);
+// const age = prompt("How old are you?");
 
-// const age = 96;
+// console.log(age);
+// console.log(typeof age);
+// console.log(typeof "15", typeof parseInt("15"));
+// console.log(age, parseInt(age));
 
-// function calculateKrAge(ageOfForeigner) {
-//   ageOfForeigner + 2;
-//   return "hello";
-// }
+// const age = parseInt(prompt("How old are you?"));
 
-// const krAge = calculateKrAge(age);
+// console.log(age);
 
-// console.log(krAge);
+const age = parseInt(prompt("How old are you?"));
 
-const calculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  times: function (a, b) {
-    return a * b;
-  },
-  divide: function (a, b) {
-    return a / b;
-  },
-  power: function (a, b) {
-    return a ** b;
-  },
-};
+// console.log(isNaN(age));
 
-const plusResult = calculator.plus(2, 3);
-const minusResult = calculator.minus(plusResult, 10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
-
-console.log(plusResult);
-console.log(minusResult);
-console.log(timesResult);
-console.log(divideResult);
-console.log(powerResult);
+if (isNaN(age) || age < 0) {
+  console.log("Please write a real positive number");
+} else if (age < 18) {
+  console.log("You are too young");
+} else if (age >= 18 && age <= 50) {
+  console.log("You can Drink");
+} else if (age > 50 && age <= 80) {
+  console.log("You should exercise");
+} else if (age === 100) {
+  console.log("Wow you are wise");
+} else if (age > 80) {
+  console.log("You can do whatever you want");
+}
