@@ -71,3 +71,74 @@ window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
 
 //
+
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+  const currentColor = h1.style.color;
+  let newColor;
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+//
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+  if (h1.className === "clicked") {
+    h1.className = "";
+  } else {
+    h1.className = "clicked";
+  }
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+// h1 {
+//   color: cornflowerblue;
+//   transition: color 0.5s ease-in-out;
+// }
+
+// .clicked {
+//   color: tomato;
+// }
+
+function handleTitleClick() {
+  const clickedClass = "clicked sexy-font";
+  if (h1.className === clickedClass) {
+    h1.className = "";
+  } else {
+    h1.className = clickedClass;
+  }
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+//
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+  const clickedClass = "clicked";
+  if (h1.classList.contains(clickedClass)) {
+    h1.classList.remove(clickedClass);
+  } else {
+    h1.classList.add(clickedClass);
+  }
+}
+
+h1.addEventListener("click", handleTitleClick);
+//
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+  h1.classList.toggle("clicked");
+}
+
+h1.addEventListener("click", handleTitleClick);
+//
