@@ -130,3 +130,25 @@ loginForm.addEventListener("submit", onLoginSubmit);
 localStorage.setItem("username", "nico");
 localStorage.removeItem("username");
 //
+const clock = document.querySelector("h2#clock");
+
+function sayHello() {
+  console.log("Hello");
+}
+
+setInterval(sayHello, 5000);
+//
+const date = new Date();
+
+date.getDate();
+date.getDay();
+date.getFullYear();
+date.getHours();
+date.getMinutes();
+date.getSeconds();
+new Date().getSeconds();
+"1".padStart(2, "0");
+"1".padEnd(2, "0");
+new Date().getHours(); //19
+string(new Date().getHours()); //"19"
+//
