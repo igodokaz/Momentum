@@ -152,3 +152,10 @@ new Date().getSeconds();
 new Date().getHours(); //19
 string(new Date().getHours()); //"19"
 //
+
+Math.random();
+Math.round(); //반올림
+Math.ceil(); //올림
+Math.floor(); //내림
+Math.floor(Math.random() * 10);
+[1, 2, 3, 4, 5].length;
