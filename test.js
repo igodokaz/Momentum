@@ -72,73 +72,39 @@ window.addEventListener("online", handleWindowOnline);
 
 //
 
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.queryselector("input");
+const loginButton = loginForm.queryselector("button");
 
-function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
-  } else {
-    newColor = "blue";
-  }
-  h1.style.color = newColor;
-}
+const loginInput = document.queryselector("#login-form input");
+const loginButton = document.queryselector("#login-form button");
 
-h1.addEventListener("click", handleTitleClick);
-
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 //
-const h1 = document.querySelector("div.hello:first-child h1");
-
-function handleTitleClick() {
-  if (h1.className === "clicked") {
-    h1.className = "";
-  } else {
-    h1.className = "clicked";
-  }
+function onLoginBtnClick() {
+  console.dir(loginInput.value);
+  console.log("click!!");
 }
 
-h1.addEventListener("click", handleTitleClick);
-
-// h1 {
-//   color: cornflowerblue;
-//   transition: color 0.5s ease-in-out;
-// }
-
-// .clicked {
-//   color: tomato;
-// }
-
-function handleTitleClick() {
-  const clickedClass = "clicked sexy-font";
-  if (h1.className === clickedClass) {
-    h1.className = "";
-  } else {
-    h1.className = clickedClass;
-  }
-}
-
-h1.addEventListener("click", handleTitleClick);
-
+loginButton.addEventListener("click", onLoginBtnClick);
 //
-const h1 = document.querySelector("div.hello:first-child h1");
 
-function handleTitleClick() {
-  const clickedClass = "clicked";
-  if (h1.classList.contains(clickedClass)) {
-    h1.classList.remove(clickedClass);
-  } else {
-    h1.classList.add(clickedClass);
-  }
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+
+const link = document.querySelector("a");
+
+function onLoginSubmit(event) {
+  tomato.preventDefault();
+  console.log(loginInput.value);
 }
 
-h1.addEventListener("click", handleTitleClick);
-//
-const h1 = document.querySelector("div.hello:first-child h1");
-
-function handleTitleClick() {
-  h1.classList.toggle("clicked");
+function handleLinkClick(event) {
+  event.preventDefault();
+  console.dir(event);
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick);
 //
