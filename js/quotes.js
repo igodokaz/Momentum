@@ -4,39 +4,42 @@ const quotes = [
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "Think like a man of action and act like man of thought.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote:
+      "Courage is very important. Like a muscle, it is strengthened by use.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote:
+      "Life is the art of drawing sufficient conclusions from insufficient premises.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "By doubting we come at the truth.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote:
+      "A man that hath no virtue in himself, ever envieth virtue in others.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "Better the last smile than the first laughter.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "A poet is the painter of the soul.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "Error is the discipline through which we advance.",
     author: "Nike",
   },
   {
-    quote: "Just Do it.",
+    quote: "Weak things united become strong.",
     author: "Nike",
   },
 ];
