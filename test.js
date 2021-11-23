@@ -159,3 +159,58 @@ Math.ceil(); //올림
 Math.floor(); //내림
 Math.floor(Math.random() * 10);
 [1, 2, 3, 4, 5].length;
+
+//
+
+function sayHello(item) {
+  console.log("this is the turn of ", item);
+}
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  //   console.log(parsedToDos);
+  parsedToDos.forEach(sayHello);
+}
+
+//
+
+function sayHello(item) {
+  console.log("this is the turn of ", item);
+}
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+  const parsedToDos = JSON.parse(savedToDos);
+  //   console.log(parsedToDos);
+  parsedToDos.forEach((item) => console.log("this is the turn of ", item));
+}
+//
+
+(item) => console.log("this is the turn of ", item);
+
+function sayHello(item) {
+  console.log("this is the turn of ", item);
+}
+//
+Date.now();
+//
+
+const fruits = ["apple", "banana", "watermellon"];
+function sexyFilter(food) {
+  return food !== "banana";
+}
+fruits.filter(sexyFilter);
+
+//
+
+const arr = [1, 2, 3, 4, 5];
+arr.filter((item) => item > 2);
+const newArr = arr.filter((item) => item > 2);
+
+arr;
+newArr;
+
+//
