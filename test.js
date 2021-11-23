@@ -214,3 +214,10 @@ arr;
 newArr;
 
 //
+
+api.openweathermap.org/data/2.5/weather?lat=37.5371723&lon=127.0011259&appid=71564254512a9126bd56812687b3f093
+
+
+{"coord":{"lon":127.0011,"lat":37.5372},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":275.36,"feels_like":270.92,"temp_min":272.85,"temp_max":275.9,"pressure":1018,"humidity":51},"visibility":10000,"wind":{"speed":5.14,"deg":300},"clouds":{"all":75},"dt":1637653202,"sys":{"type":1,"id":8096,"country":"KR","sunrise":1637619597,"sunset":1637655424},"timezone":32400,"id":6800516,"name":"Kŭmhosamga-dong","cod":200}
+https://api.openweathermap.org/data/2.5/weather?lat=37.5371163&lon=127.0078127&appid=71564254512a9126bd56812687b3f093&units=metric
+//
